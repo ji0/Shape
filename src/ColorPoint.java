@@ -1,7 +1,6 @@
+public class ColorPoint extends Point {
 
-public class ColorPoint extends Point{
-	
-	String color;
+	private String color;
 
 	public String getColor() {
 		return color;
@@ -10,19 +9,25 @@ public class ColorPoint extends Point{
 	public void setColor(String color) {
 		this.color = color;
 	}
+
 	
-	public void show(){
-		System.out.println("좌표 [ x = " + getX() + ", y = " + getY() + ", Color = " + getColor()+ " ]에 점을 그렸습니다. ");
+
+	ColorPoint() {
+
 	}
+
 	
-	ColorPoint(){
+	public void draw(){
+		System.out.println("좌표 [ x = " + getX() + ", y = " + getY()
+				+ ", Color = " + getColor() + " ]에 점을 그렸습니다. ");
+		
 		
 	}
-	public ColorPoint(int x, int y, String color){
+	public ColorPoint(int x, int y, String color) {
 		super(x, y);
-		
+
 		this.color = color;
-		
+
 	}
-	
+
 }

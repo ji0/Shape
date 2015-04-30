@@ -23,7 +23,7 @@ public class ShapeApp {
 		point4.setX(5);
 		point4.setY(3);
 		point4.setColor("red");
-		point4.show();
+		//point4.show();
 		
 		
 	}

@@ -1,7 +1,7 @@
-abstract public class Shape {
+abstract public class Shape implements Visible{
 
-	abstract public void draw();
-
+	private String color;
+	
 	abstract public double CalculateArea();
 
 }

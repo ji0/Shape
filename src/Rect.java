@@ -25,6 +25,20 @@ public class Rect extends Shape implements Drawable {
 	}
 
 	
-	 @Override public double CalculateArea() { return 0; }
+	 @Override public double CalculateArea() { 
+		 
+		 return width*height; 
+		 }
+
+	@Override
+	public void visible(boolean a) {
+
+		if(a == true){
+			System.out.println("사각형이 보입니다");
+		}else{
+			System.out.println("사각형이 보이지 않습니다.");
+		}
+	
+	}
 	
 }

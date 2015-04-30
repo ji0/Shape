@@ -1,24 +1,6 @@
-public class Circle extends Shape implements Drawable{
+public class Circle extends Shape implements Drawable {
 
-	private int x;
-	private int y;
 	private double radius;
-	
-	public int getX() {
-		return x;
-	}
-
-	public void setX(int x) {
-		this.x = x;
-	}
-
-	public int getY() {
-		return y;
-	}
-
-	public void setY(int y) {
-		this.y = y;
-	}
 
 	public double getRadius() {
 		return radius;
@@ -27,17 +9,33 @@ public class Circle extends Shape implements Drawable{
 	public void setRadius(double radius) {
 		this.radius = radius;
 	}
-
+	
+	Circle(){
+		
+	}
+	
+	Circle(int radius){
+		this.radius = radius;
+	}
 
 	@Override
 	public void draw() {
 		System.out.println("원을 그렸습니다");
 	}
 
-
 	@Override
 	public double CalculateArea() {
-		// TODO Auto-generated method stub
-		return 0;
+		
+		return 4 / 3 * 3.14 * radius * radius;
+	}
+
+	public void visible(boolean a) {
+
+		if(a == true){
+			System.out.println("삼각형이 보입니다");
+		}else{
+			System.out.println("삼각형이 보이지 않습니다.");
+		}
+		
 	}
 }
