@@ -1,6 +1,5 @@
 
-public class Point {
-
+public class Point implements Drawable{
 
 	private int x;
 	private int y;
@@ -29,7 +28,7 @@ public class Point {
 		
 	}
 	
-	public void show(boolean visible){
+/*	public void show(boolean visible){
 		if(visible == true){
 			System.out.println("좌표 [ x = " + x + ", y = " + y + " ]에 점을 그렸습니다. ");
 		}else{
@@ -39,6 +38,12 @@ public class Point {
 	
 	public void show(){
 		System.out.println("좌표 [ x = " + x + ", y = " + y + " ]에 점을 그렸습니다. ");
+	}*/
+	@Override
+	public void draw() {
+		// TODO Auto-generated method stub
+		System.out.println("좌표 [ x = " + x + ", y = " + y + " ]에 점을 그렸습니다.");
+		
 	}
 
 }

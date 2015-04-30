@@ -1,8 +1,7 @@
+abstract public class Shape {
 
-public class Shape {
+	abstract public void draw();
 
-	   public void draw() {
-	       System.out.print( "구체적인 도형을 그릴 수 없습니다. 상속해서 재정의하세요"); 
-	   }
+	abstract public double CalculateArea();
 
 }
